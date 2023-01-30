@@ -6,10 +6,10 @@ function mostrar()
 	let nombre;
 	let nombrecompleto;
 	
-	prompt ("ingrese su nombre por favor")
 	
-    prompt=nombre
+	
+	nombre = prompt ("ingrese su nombre por favor");
+	
+    alert("hola " +nombre+ ", bienvenido!!")
 
-	alert(nombre);
 }
-
