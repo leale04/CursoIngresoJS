@@ -6,5 +6,22 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
 
-	alert("ok");
+	let NumeroUno;
+    let porcentaje;
+    let resultado;
+
+  NumeroUno = document.getElementById("txtIdSueldo").value;
+  
+
+ NumeroUno = parseInt(NumeroUno);
+ 
+
+ porcentaje = NumeroUno * 10/100;
+
+ resultado = NumeroUno + porcentaje;
+
+ txtIdResultado.value = resultado
+
+ 
+
 }
