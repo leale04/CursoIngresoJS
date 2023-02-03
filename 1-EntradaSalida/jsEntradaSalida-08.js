@@ -18,7 +18,7 @@ function SacarResto()
 
   resultado = NumeroUno % NumeroDos;
 
-  txtIdResultado.value = resultado
+  txtIdResultado.value = resultado;
 
 
 }

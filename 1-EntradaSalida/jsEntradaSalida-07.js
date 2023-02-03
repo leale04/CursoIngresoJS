@@ -10,15 +10,15 @@ function sumar()
   let NumeroDos;
   let resultado;
 
-  NumeroUno = document.getElementById("txtIdNumeroUno").value
-  NumeroDos = document.getElementById("txtIdNumeroDos").value
+  NumeroUno = document.getElementById("txtIdNumeroUno").value;
+  NumeroDos = document.getElementById("txtIdNumeroDos").value;
 
- NumeroUno = parseInt(NumeroUno)
- NumeroDos = parseInt(NumeroDos)
+ NumeroUno = parseInt(NumeroUno);
+ NumeroDos = parseInt(NumeroDos);
 
-  resultado = NumeroUno + NumeroDos
+  resultado = NumeroUno + NumeroDos;
 
-  alert("El reultado es: " + resultado )
+  alert("El reultado es: " + resultado );
 
 }	
 
@@ -28,15 +28,15 @@ function restar()
   let NumeroDos;
   let resultado;
 
-  NumeroUno = document.getElementById("txtIdNumeroUno").value
-  NumeroDos = document.getElementById("txtIdNumeroDos").value
+  NumeroUno = document.getElementById("txtIdNumeroUno").value;
+  NumeroDos = document.getElementById("txtIdNumeroDos").value;
 
- NumeroUno = parseInt(NumeroUno)
- NumeroDos = parseInt(NumeroDos)
+ NumeroUno = parseInt(NumeroUno);
+ NumeroDos = parseInt(NumeroDos);
 
-  resultado = NumeroUno - NumeroDos
+  resultado = NumeroUno - NumeroDos;
 
-  alert("El reultado es: " + resultado )
+  alert("El reultado es: " + resultado );
 }
 
 function multiplicar()
@@ -46,15 +46,15 @@ function multiplicar()
   let NumeroDos;
   let resultado;
 
-  NumeroUno = document.getElementById("txtIdNumeroUno").value
-  NumeroDos = document.getElementById("txtIdNumeroDos").value
+  NumeroUno = document.getElementById("txtIdNumeroUno").value;
+  NumeroDos = document.getElementById("txtIdNumeroDos").value;
 
- NumeroUno = parseInt(NumeroUno)
- NumeroDos = parseInt(NumeroDos)
+ NumeroUno = parseInt(NumeroUno);
+ NumeroDos = parseInt(NumeroDos);
 
-  resultado = NumeroUno * NumeroDos
+  resultado = NumeroUno * NumeroDos;
 
-  alert("El reultado es: " + resultado )
+  alert("El reultado es: " + resultado );
 
 }
 
@@ -66,15 +66,15 @@ function dividir()
   let NumeroDos;
   let resultado;
 
-  NumeroUno = document.getElementById("txtIdNumeroUno").value
-  NumeroDos = document.getElementById("txtIdNumeroDos").value
+  NumeroUno = document.getElementById("txtIdNumeroUno").value;
+  NumeroDos = document.getElementById("txtIdNumeroDos").value;
 
- NumeroUno = parseInt(NumeroUno)
- NumeroDos = parseInt(NumeroDos)
+ NumeroUno = parseInt(NumeroUno);
+ NumeroDos = parseInt(NumeroDos);
 
-  resultado = NumeroUno / NumeroDos
+  resultado = NumeroUno / NumeroDos;
 
-  alert("El reultado es: " + resultado )
+  alert("El reultado es: " + resultado );
 }
 
 

@@ -19,6 +19,6 @@ function mostrarAumento()
 
      resultado = NumeroUno - porcentaje;
 
-     txtIdResultado.value = resultado
+     txtIdResultado.value = resultado;
 
 }
