@@ -12,3 +12,10 @@ function mostrar()
 	}
 
 }//FIN DE LA FUNCIÓN
+/*
+A  B   &&  ||
+V  V   V   V
+V  F   F   V
+F  V   F   V
+F  F   F   F
+*/

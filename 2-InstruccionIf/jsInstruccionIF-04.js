@@ -5,7 +5,7 @@ function mostrar()
 	edad = document.getElementById("txtIdEdad").value
 	
 	
-	if(edad <=17  &  edad >=13)
+	if(edad <=17  &&  edad >=13)
 	
 	{
 		alert("usted es adolescente")
