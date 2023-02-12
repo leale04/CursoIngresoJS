@@ -10,5 +10,129 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+    let cantidadLamparitas;
+    let precioFinal;
+    let descuento;
+    let marca
+    let cantidadexacta
+    let totalconimpuesto
+    
+    cantidadLamparitas = document.getElementById("txtIdCantidad").value;
+    marca = document.getElementById("Marca").value;
+   
+  
+    cantidadLamparitas = parseInt(cantidadLamparitas);
+    precioFinal = parseInt(precioFinal)
+    cantidadexacta = parseInt(cantidadexacta) 
+     
+    
+    if( cantidadLamparitas >= 6 )
+    {
+      descuento = 50;
+    }
+          else 
+      
+          if( cantidadLamparitas == 5 )                    
+          {
+             if( marca == "ArgentinaLuz" )                    
+           
+            {            
+              descuento = 40;
+         
+            }            
+           
+            else
+            
+            {
+              descuento = 30;  
+        
+            }                               
+          }   
+             if( cantidadLamparitas == 4 )         
+            {              
+              if(marca == "ArgentinaLuz"|| marca == "FelipeLamparas")
+             
+              {
+               descuento = 25;
+            
+              }
+             
+              else
+             
+              {
+               descuento = 20;
+             
+              }
+            
+            }
+               
+               if( cantidadLamparitas == 3 )
+              {
+                if( marca == "ArgentinaLuz")
+                 {                 
+                  descuento = 15;
+                 
+                 }
+              
+                
+                else
+                
+                  if( cantidadLamparitas == 3 )
+                {
+                 
+                  if ( marca == "FelipeLamparas" )
+                 {
+                  descuento = 10;          
+                
+                 }
+
+                 else 
+
+                 {
+                  descuento = 5;
+                 
+                 }
+                }
+              }
+                
+              
+                
+     
+    
+                      
+              
+
+
+
+                
+               
+  
+          
+    
+    
+    
+    
+      
+    cantidadexacta = (cantidadLamparitas * 35) ;
+    
+    precioFinal = (cantidadexacta * descuento) / 100
+    
+    
+    total = cantidadexacta - precioFinal
+    
+    if(total > 120)
+    {
+      totalconimpuesto = total + ((total * 10) /100) 
+      
+      txtIdprecioDescuento.value = "IIBB Usted pago " + totalconimpuesto
+    }
+     else 
+     {
+     txtIdprecioDescuento.value = total;
+     }
+ 
+
+
+
+
 }
