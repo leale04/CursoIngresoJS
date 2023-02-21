@@ -13,17 +13,77 @@ hasta que el usuario quiera, mostrar:
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	var numero
+	var sumaNegativos = 0 ;
+    var sumapositivos = 0
+	var cantidadpositivos = 0 
+	var cantidadnegativos = 0
+	var cantidadceros = 0
+	var cantidadpares = 0
+    var promediopositivos
+	var promedionegativos
+	var diferenciadenumeros
+	var ingreso = true
+    var contador = 0
+	
+	
+	ingreso == confirm("desea introducir un numero?")
 
-	respuesta="si";
+	while(ingreso == true )
+	{	
+	    
+		 numero = prompt("ingrese un numero por favor")
+		 numero = parseInt(numero)            
+			
+			if(numero < 0)
+			{
+            sumaNegativos -= numero
+			cantidadnegativos++
+			}
 
-	while(respuesta=="si")
-	{
+            else
+			 if(numero > 0)
+			 {
+			 sumapositivos += numero	
+			 cantidadpositivos++
+			 }
+			
+			 else 
+              if(numero == 0)
+			  {
+			  cantidadceros++;
+			  }
+		     
+		    if(numero % 2 == 0)
+			{
+            cantidadpares++;
+			}	
+	
+		   contador++    
+	   
+		   ingreso = confirm("desea ingresar otro numero")
 		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+	}
 
-	document.write("la suma de negativos es :"+sumaNegativos);
-}//FIN DE LA FUNCIÓN
+	
+	promediopositivos = sumapositivos/cantidadpositivos 
+	promedionegativos = sumaNegativos/cantidadnegativos
+	diferenciadenumeros = sumapositivos - sumaNegativos
+
+	document.write
+	(
+	"la suma de negativos es :-"+ sumaNegativos + 
+	" , suma positivos es: " + sumapositivos +
+	" , la cantidad de positivos es: " + cantidadpositivos + 
+	" , la cantidad de negativos es: " + cantidadnegativos +
+	" , la cantidad de ceros es: " + cantidadceros +
+	" , la cantidad de pares es: " + cantidadpares +
+	" , el promedio de positivos es:  " + promediopositivos + 
+	" , el pormedio de negativos es: " + promedionegativos +
+	" , la diferencia entre negativos y positivos es: " + diferenciadenumeros
+	);
+
+
+
+
+}//FIN DE LA FUNCIÓNs

@@ -25,11 +25,17 @@ function CalcularPrecio ()
     precioFinal = parseInt(precioFinal)
     cantidadexacta = parseInt(cantidadexacta) 
      
-    
-    if( cantidadLamparitas >= 6 )
+    if (isNaN(cantidadLamparitas))
     {
-      descuento = 50;
+      alert("Por favor ingrese su numero")
     }
+  
+    else
+
+      if( cantidadLamparitas >= 6 )
+      {
+        descuento = 50;
+      }
           else 
       
           if( cantidadLamparitas == 5 )                    
@@ -95,23 +101,7 @@ function CalcularPrecio ()
                 }
               }
                 
-              
-                
-     
-    
-                      
-              
-
-
-
-                
-               
-  
-          
-    
-    
-    
-    
+       
       
     cantidadexacta = (cantidadLamparitas * 35) ;
     
